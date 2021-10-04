@@ -1,0 +1,19 @@
+﻿
+@{
+   
+}
+
+
+<h1>Hoşgeldin @ViewBag.Name</h1>
+<p>
+    @if (ViewBag.Hour >= 12)
+    {
+        <span>İyi günler</span>
+    }
+    else
+    {
+        <span>Günaydın</span>
+    }
+</p>
+    Partiye davet formunu doldurmak için <a asp-action="Rsvp" asp-controller="Home">tıklayınız....</a>
+

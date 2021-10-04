@@ -1,0 +1,6 @@
+﻿@{
+    var item = new Random().Next(1, 3);
+    string layout = item % 2 == 0 ? "_one" : "_another";
+    //layout yönlendirmesi elbette dinamik olabilir.
+    Layout = "_Layout";
+}

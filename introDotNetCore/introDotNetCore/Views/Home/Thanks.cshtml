@@ -1,0 +1,25 @@
+﻿@model IncomingUsers
+@{
+   
+}
+
+
+
+    Teşekkürler!
+
+    <h2> Gelen kullanıcılar: </h2>
+    @if (Model.UserResponses.Count > 0)
+    {
+        <table>
+            @foreach (var item in Model.UserResponses)
+            {
+                <tr>
+                    <td>
+                        @item.Name (@item.Email)
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+
+

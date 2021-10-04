@@ -1,0 +1,23 @@
+﻿@model UserResponse
+@{
+    
+}
+
+
+    <form asp-action="Rsvp" asp-controller="Home">
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+        <br />
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+        <br />
+        <select asp-for="IsAccept">
+            <option value="">Seçim yapınız</option>
+            <option value="true">Evet katılacağım</option>
+            <option value="false">Hayır katılmayacağım</option>
+        </select>
+        <span asp-validation-for="IsAccept"></span>
+
+        <input type="submit" name="name" value="Gönder" />
+    </form>
+
